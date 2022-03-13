@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -8,4 +11,349 @@
     outline: 0;
     box-sizing: border-box;
     background-color: transparent;
+}
+
+.wrapper {
+    width: 1920px;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.hero {
+    background: rgba(250, 250, 245, 0.5);
+    width: 1920px;
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero__header-wrapper {
+    position: fixed;
+    height: 104px;
+    z-index: 999;
+    background: #fcfcfa;
+    width: 1920px;
+}
+
+.hero__header {
+    width: 1360px;
+    height: 64px;
+    margin: 40px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__header_nav {
+    width: 470px;
+}
+
+.hero__header_nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero__header_nav li {
+    list-style-type: none;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    color: #214842;
+}
+
+.hero__header_tel_buy-wrapper {
+    display: flex;
+}
+
+.hero__header_tel_icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-color: #258f67;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hero__header_tel_icon img {
+    width: 17px;
+    height: 16px;
+}
+
+.hero__header_tel {
+    display: flex;
+    align-items: center;
+}
+
+.hero__header_tel_number {
+    margin-left: 13px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #214842;
+}
+
+.hero__header_buy {
+    width: 172px;
+    height: 40px;
+    border: #efc368 1px solid;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.hero__header_buy_text {
+    position: absolute;
+    left: 0px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 17px;
+    margin-left: 14px;
+    color: #214842;
+}
+
+.hero__header_buy_icon {
+    position: absolute;
+    right: 0px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: #efc368;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.hero__product {
+    width: 1360px;
+    height: 600px;
+    margin-top: 200px;
+    display: flex;
+}
+
+.hero__product_description {
+    height: 600px;
+    width: 510px;
+    margin-left: 60px;
+}
+
+.hero__product_description h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 62px;
+    color: #214842;
+    margin-top: 102px;
+}
+
+.hero__product_description p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: justify;
+    color: #556260;
+    padding-right: 75px;
+    margin-top: 23px;
+}
+
+.hero__product_description .button {
+    width: 214px;
+    height: 48px;
+    background-color: #efc368;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    color: #214842;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 17px;
+    margin-top: 29px;
+}
+
+.hero__product_image-wrapper {
+    position: relative;
+    height: 600px;
+    width: 710px;
+}
+
+.hero__product_image-bg1 {
+    position: absolute;
+    width: 345px;
+    height: 524px;
+    top: 67px;
+    left: 185px;
+    background: rgba(239, 195, 104, 0.47);
+    filter: blur(90px);
+    z-index: 1px;
+}
+
+.hero__product_image-bg2 {
+    position: absolute;
+    width: 636px;
+    height: 55px;
+    bottom: 4px;
+    left: 44px;
+    background: #000000;
+    filter: blur(70px);
+    z-index: 2;
+}
+
+.hero__product_image {
+    position: absolute;
+    z-index: 3;
+}
+
+.hero__advantages {
+    height: 60px;
+    width: 1186px;
+    margin-top: 93px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero__advantages_elem {
+    width: 208px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hero__advantages_elem_image {
+    width: 60px;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(37, 143, 103, 0.1);
+}
+
+.hero__advantages_elem_image img {
+    display: flex;
+}
+
+.hero__advantages_elem_desc {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    color: #214842;
+    margin-left: 20px;
+    width: 128px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.products {
+    width: 1360px;
+    height: 1437px;
+    border: 1px solid red;
+    margin: 100px auto 0 auto;
+}
+
+.products h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #214842;
+    text-align: center;
+}
+
+.products__subtitle {
+    max-width: 620px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 15px;
+    color: #556260;
+    margin-bottom: 57px;
+}
+
+.products__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__card {
+    width: 23%;
+    height: 678px;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(37, 143, 103, 0.1);
+    border-radius: 16px;
+}
+
+.products__card img {
+    border-radius: 16px;
+}
+
+.products__card h4 {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #214842;
+    width: 174px;
+    margin: 29px auto 0 auto;
+}
+
+.products__card p {
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    color: #214842;
+    width: 258px;
+    margin: 20px auto;
+}
+
+.banner {
+    border: solid 1px green;
+    height: 493px;
+    margin-top: 97px;
+    background: #fafaf5;
+    display: flex;
+}
+
+.banner__description {
+    border: solid 1px blue;
+    height: 100%;
+
+    width: 50%;
+}
+
+.banner__image {
+    border: solid 1px red;
+    height: 100%;
+
+    width: 50%;
+    background-image: url("../images/leaves.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
