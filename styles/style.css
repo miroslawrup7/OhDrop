@@ -998,6 +998,10 @@
     font-size: 17px;
 }
 
+.content-text .button {
+    margin-top: 30px;
+}
+
 .contacts {
     width: 1360px;
     height: 523px;
@@ -1067,7 +1071,7 @@
 .contacts__card .button {
     margin-top: 24px;
     border: 1px solid #258f67;
-    background: transparent;
+    background: white;
     color: #258f67;
 }
 
@@ -1077,4 +1081,107 @@
     font-family: "Montserrat";
     font-size: 14px;
     line-height: 22px;
+}
+
+/* Distribution */
+
+.shops_list {
+    width: 1360px;
+    height: 428px;
+    margin-bottom: 74px;
+}
+
+.shops_list h2 {
+    font-family: "Nunito Sans";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #214842;
+    text-align: center;
+}
+
+.shops_list-table {
+    width: 1360px;
+    height: 335px;
+    margin-top: 48px;
+    margin-bottom: 74px;
+    background: #fafaf5;
+    border-radius: 16px;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 44px;
+    position: relative;
+}
+
+.shops_list-table-blur {
+    position: absolute;
+    height: 15px;
+    width: 1100px;
+    left: 130px;
+    top: 150;
+    background: #000000;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.shops_list-table table {
+    width: calc(100% - 100px);
+    margin: 20px 50px;
+    border-collapse: collapse;
+    z-index: 1;
+}
+
+.shops_list-table th {
+    color: rgba(33, 72, 66, 0.7);
+    border-bottom: 1px solid #e5e5cb;
+    height: 80px;
+    vertical-align: middle;
+}
+
+.shops_list-table th:nth-of-type(1),
+.shops_list-table td:nth-of-type(1) {
+    text-align: left;
+}
+
+.shops_list-table th:nth-of-type(2),
+.shops_list-table td:nth-of-type(2) {
+    text-align: center;
+}
+
+.shops_list-table th:nth-of-type(3) {
+    text-align: right;
+}
+
+.shops_list-table td:nth-of-type(3) {
+    text-align: right;
+}
+
+.shops_list-table td {
+    color: #556260;
+    width: 30%;
+    border-bottom: 1px solid #e5e5cb;
+    height: 120px;
+    vertical-align: middle;
+}
+
+.shops_list-table .button {
+    border: 1px solid #258f67;
+    background: white;
+    color: #258f67;
+    display: inline-block;
+}
+
+.shops_list-table p {
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 44px;
+    color: #556260;
+    margin-top: 36px;
+}
+
+.shops_list-table a {
+    color: #258f67;
 }
