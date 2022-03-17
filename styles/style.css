@@ -37,6 +37,8 @@
     width: fit-content;
 }
 
+/* Home */
+
 .hero {
     background: rgba(250, 250, 245, 0.5);
     width: 1920px;
@@ -48,11 +50,20 @@
 }
 
 .hero__header-wrapper {
-    /* position: fixed; */
     height: 104px;
-    /* z-index: 999; */
     background: #fcfcfa;
     width: 1920px;
+}
+
+.hero__header-wrapper.white {
+    background: white;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__header-wrapper.white .hero__header {
+    margin: 0 auto;
 }
 
 .hero__header {
@@ -865,4 +876,205 @@
     line-height: 20px;
     color: #214842;
     margin-left: 12px;
+}
+
+/*  Współpraca  */
+
+.header {
+    height: 300px;
+    width: 100%;
+    background: #fafaf5;
+}
+
+.header h1 {
+    font-family: "Nunito Sans";
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 62px;
+    text-align: center;
+    color: #214842;
+    padding: 78px 0 15px 0;
+}
+
+.header p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    color: #556260;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    width: 1360px;
+    margin: 0 auto;
+}
+
+.breadcrumbs {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.breadcrumbs__bottom-line {
+    width: 80px;
+    border-bottom: 2px solid #258f67;
+    padding-bottom: 20px;
+}
+
+.breadcrumbs__bottom-line p {
+    white-space: nowrap;
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #214842;
+}
+
+.breadcrumbs__bottom-line p a {
+    color: #258f67;
+    font-weight: 700;
+}
+
+.content {
+    width: 1360px;
+    height: 506px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.content-text {
+    width: 600px;
+}
+
+.content-image {
+    width: 660px;
+}
+
+.content-image img {
+    border-radius: 16px;
+}
+
+.content-text h2 {
+    font-family: "Nunito Sans";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #214842;
+    margin-bottom: 30px;
+}
+
+.content-text p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #556260;
+    margin: 20px 0;
+}
+
+.content-text ul {
+    padding-left: 5px;
+}
+
+.content-text li {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #556260;
+    margin: 3px 0;
+    list-style-type: none;
+}
+
+.content-text span {
+    color: #258f67;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.contacts {
+    width: 1360px;
+    height: 523px;
+    display: flex;
+    margin-bottom: 72px;
+    flex-direction: column;
+}
+
+.contacts__header h1 {
+    font-family: "Nunito Sans";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #214842;
+}
+
+.contacts__header p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    color: #556260;
+}
+
+.contacts__cards {
+    margin-top: 64px;
+
+    height: 390px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__card {
+    width: 655px;
+    padding: 40px;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(37, 143, 103, 0.1);
+    border-radius: 16px;
+}
+
+.contacts__card h4 {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #214842;
+    margin-bottom: 24px;
+}
+
+.contacts__card p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #556260;
+
+    margin: 20px 0;
+}
+
+.contacts__card img {
+    margin: 15px 0 15px 170px;
+    text-align: center;
+}
+
+.contacts__card .button {
+    margin-top: 24px;
+    border: 1px solid #258f67;
+    background: transparent;
+    color: #258f67;
+}
+
+.contacts__card a {
+    color: #258f67;
+    font-weight: bold;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 22px;
 }
