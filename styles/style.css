@@ -20,6 +20,23 @@
     position: relative;
 }
 
+.button {
+    height: 48px;
+    background-color: #efc368;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    color: #214842;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 20px;
+    width: fit-content;
+}
+
 .hero {
     background: rgba(250, 250, 245, 0.5);
     width: 1920px;
@@ -31,9 +48,9 @@
 }
 
 .hero__header-wrapper {
-    position: fixed;
+    /* position: fixed; */
     height: 104px;
-    z-index: 999;
+    /* z-index: 999; */
     background: #fcfcfa;
     width: 1920px;
 }
@@ -138,7 +155,7 @@
 .hero__product {
     width: 1360px;
     height: 600px;
-    margin-top: 200px;
+    margin-top: 97px;
     display: flex;
 }
 
@@ -168,21 +185,7 @@
     padding-right: 75px;
     margin-top: 23px;
 }
-
 .hero__product_description .button {
-    width: 214px;
-    height: 48px;
-    background-color: #efc368;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 24px;
-    color: #214842;
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 17px;
     margin-top: 29px;
 }
 
@@ -267,7 +270,6 @@
 .products {
     width: 1360px;
     height: 1437px;
-    border: 1px solid red;
     margin: 100px auto 0 auto;
 }
 
@@ -317,7 +319,7 @@
     line-height: 30px;
     text-align: center;
     color: #214842;
-    width: 174px;
+    width: 213px;
     margin: 29px auto 0 auto;
 }
 
@@ -333,27 +335,533 @@
 }
 
 .banner {
-    border: solid 1px green;
     height: 493px;
     margin-top: 97px;
     background: #fafaf5;
     display: flex;
+    border-radius: 16px;
 }
 
 .banner__description {
-    border: solid 1px blue;
     height: 100%;
-
     width: 50%;
+    padding: 108px 150px 108px 97px;
+}
+
+.banner__description h3 {
+    font-family: "Nunito Sans";
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 34px;
+    color: #214842;
+    margin-bottom: 21px;
+}
+
+.banner__description p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #556260;
+    margin: 20px 0;
 }
 
 .banner__image {
-    border: solid 1px red;
     height: 100%;
-
     width: 50%;
     background-image: url("../images/leaves.png");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner__image_logo {
+    height: 85px;
+}
+
+.banner__image_text {
+    margin-top: 18px;
+    height: 44px;
+}
+
+.about {
+    width: 1220px;
+    min-height: 900px;
+    margin: 90px auto 0 auto;
+}
+
+.about h2 {
+    font-family: "Nunito Sans";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #214842;
+    width: 843px;
+    margin: 0 auto;
+}
+
+.about__sections {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6px;
+}
+
+.about__section {
+    display: flex;
+    flex-direction: row;
+    height: 345px;
+    margin-top: 56px;
+    align-items: center;
+}
+
+.img-right {
+    margin-right: 56px;
+}
+
+.img-left {
+    margin-left: 56px;
+}
+
+.about__section-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 31px;
+    color: #556260;
+}
+
+.about__section-text p {
+    margin: 25px 0;
+}
+
+.about-txt {
+    height: 1000px;
+    background-image: url("../images/swing.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.about-txt-wrapper {
+    margin: 30px;
+    max-width: 1120px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-txt h2 {
+    font-family: "Nunito Sans";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #ffffff;
+    margin: 48px 0 33px 0;
+}
+
+.about-txt p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 31px;
+    text-align: center;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.about-txt .button {
+    margin-top: 77px;
+}
+
+.advantages {
+    width: 1310px;
+    height: 530px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__header h2 {
+    font-family: "Nunito Sans";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #214842;
+}
+
+.advantages__header p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    color: #556260;
+    max-width: 510px;
+    margin-top: 15px;
+}
+
+.advantages__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 52px;
+}
+
+.advantages__card {
+    display: flex;
+    flex-direction: column;
+    width: 252px;
+    height: 340px;
+    align-items: center;
+}
+
+.advantages__card_circle-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(37, 143, 103, 0.1);
+}
+
+.advantages__card [alt="drop"] {
+    height: 51px;
+}
+
+.advantages__card [alt="nose"],
+.advantages__card [alt="head"] {
+    height: 56px;
+}
+
+.advantages__card [alt="cream"] {
+    height: 51px;
+}
+
+.advantages__card h4 {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #214842;
+    margin-top: 30px;
+}
+
+.advantages__card p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    color: #556260;
+    margin-top: 15px;
+}
+
+.effects {
+    height: 830px;
+    width: 1920px;
+    margin-top: 86px;
+    display: flex;
+    background: #fafaf5;
+}
+
+.effects__image {
+    height: 650px;
+    width: 620px;
+    margin: 90px 80px 90px 280px;
+}
+
+.effects__image img {
+    border-radius: 16px;
+}
+
+.effects__faq {
+    height: 650px;
+    width: 660px;
+    margin: 90px 280px 90px 0;
+    position: relative;
+}
+
+.effects__faq h2 {
+    font-family: "Nunito Sans";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #214842;
+}
+
+.effects__faq p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #556260;
+    margin-top: 27px;
+}
+
+.effects__faq-accordions {
+    margin-top: 30px;
+}
+
+.effects__faq-accordion {
+    width: 660px;
+    height: 60px;
+    background: #ffffff;
+    box-shadow: 0px 0px 15px rgba(37, 143, 103, 0.1);
+    border-radius: 16px;
+    margin: 19px 0;
+}
+
+.effects__faq .button {
+    position: absolute;
+    bottom: 40px;
+}
+
+.effects__faq-accordion h4 {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    color: #214842;
+    margin: 16px 30px;
+    display: inline-block;
+}
+
+.effects__faq-accordion p {
+    display: none;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #556260;
+    margin: 0 30px;
+}
+
+.effects__faq-accordion.open h4 {
+    color: #258f67;
+}
+
+.effects__faq-accordion.open {
+    height: 179px;
+}
+
+.effects__faq-accordion.open p {
+    display: inline-block;
+}
+
+.footer {
+    width: 1920px;
+    height: 660px;
+}
+
+.footer__big {
+    width: 1920px;
+    height: 550px;
+    background: #214842;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer__big-wrapper {
+    width: 1380px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__big_logo {
+    width: 230px;
+    height: 250px;
+}
+
+.footer__big_logo img {
+    margin-top: -18px;
+}
+
+.footer__big_logo p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.footer__big_logo_social {
+    width: 132px;
+    height: 31px;
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__big_logo_social img {
+    height: 18px;
+}
+
+.footer__big_shop {
+    width: 250px;
+    height: 250px;
+}
+
+.footer__big_shop h2 {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.footer__big_shop_list {
+    min-height: 40px;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+}
+
+.footer__big_shop_list-wrapper {
+    width: 34px;
+    height: 34px;
+    background: #efc368;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.footer__big_shop_list-desc-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__big_shop_list-desc-box p:nth-child(2) {
+    margin-top: 15px;
+    color: #efc368;
+}
+
+.footer__big_shop_list p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.footer__big_menu {
+    width: 150px;
+    height: 250px;
+}
+
+.footer__big_menu h2 {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.footer__big_menu ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer__big_menu ul li {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.footer__big_menu ul li img {
+    margin-right: 5px;
+}
+
+.footer__big_instagram {
+    width: 312px;
+    height: 250px;
+}
+
+.footer__big_instagram h2 {
+    font-family: "Nunito Sans";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.footer__big_instagram-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 165px;
+    margin-top: 20px;
+}
+
+.footer__big_instagram-image-grid img {
+    border-radius: 8px;
+}
+
+.footer__copyright {
+    width: 1920px;
+    height: 110px;
+    background: #fafaf5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__copyright-owner {
+    height: 30px;
+    width: 550px;
+    display: flex;
+}
+
+.footer__copyright-owner p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #214842;
+    margin-right: 10px;
+}
+
+.footer__copyright-slogans {
+    height: 50px;
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright-slogan {
+    display: flex;
+    align-items: center;
+}
+
+.footer__copyright-slogan p {
+    font-family: "Nunito Sans";
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #214842;
+    margin-left: 12px;
 }
