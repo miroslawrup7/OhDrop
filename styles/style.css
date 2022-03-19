@@ -124,6 +124,9 @@
 
 .hero__header_tel_number {
     margin-left: 13px;
+}
+
+.hero__header_tel_number a {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     font-size: 17px;
@@ -145,6 +148,9 @@
 .hero__header_buy_text {
     position: absolute;
     left: 0px;
+}
+
+a .hero__header_buy_text {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 700;
     font-size: 17px;
@@ -620,7 +626,7 @@
     color: #214842;
 }
 
-.effects__faq p {
+.effects__faq .effects__faq-subtitle {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 17px;
@@ -630,7 +636,9 @@
 }
 
 .effects__faq-accordions {
-    margin-top: 30px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
 }
 
 .effects__faq-accordion {
@@ -639,7 +647,8 @@
     background: #ffffff;
     box-shadow: 0px 0px 15px rgba(37, 143, 103, 0.1);
     border-radius: 16px;
-    margin: 19px 0;
+    margin: 10px 0;
+    transition: all 0.2s ease-out;
 }
 
 .effects__faq .button {
@@ -647,36 +656,55 @@
     bottom: 40px;
 }
 
-.effects__faq-accordion h4 {
+.effects__faq-accordion .accordion {
     font-family: "Nunito Sans";
     font-weight: 700;
     font-size: 22px;
     line-height: 30px;
     color: #214842;
     margin: 16px 30px;
-    display: inline-block;
+    cursor: pointer;
+    /* transition: color 0.3s ease-out; */
+}
+
+.effects__faq-accordion.active .accordion,
+.effects__faq-accordion .accordion:hover {
+    color: #258f67;
 }
 
 .effects__faq-accordion p {
-    display: none;
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
     color: #556260;
     margin: 0 30px;
+    opacity: 0;
+    transition: all 0.1s ease-out;
+    visibility: hidden;
 }
 
-.effects__faq-accordion.open h4 {
-    color: #258f67;
+.effects__faq-accordion .accordion:after {
+    content: "\002B";
+    font-family: "Font Awesome 5 Pro";
+    font-size: 22px;
+    line-height: 26px;
+    color: #214842;
+    float: right;
+    margin-left: 5px;
 }
 
-.effects__faq-accordion.open {
+.effects__faq-accordion.active .accordion:after {
+    content: "\2212";
+}
+
+.effects__faq-accordion.active {
     height: 179px;
 }
 
-.effects__faq-accordion.open p {
-    display: inline-block;
+.effects__faq-accordion.active p {
+    opacity: 1;
+    visibility: visible;
 }
 
 .footer {
@@ -705,7 +733,7 @@
     height: 250px;
 }
 
-.footer__big_logo img {
+.footer__big_logo img[alt="logo"] {
     margin-top: -18px;
 }
 
@@ -722,12 +750,14 @@
     height: 31px;
     margin-top: 17px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer__big_logo_social img {
     height: 18px;
+    display: block;
 }
 
 .footer__big_shop {
@@ -750,6 +780,10 @@
     display: flex;
 }
 
+.footer__big_shop_list.center {
+    align-items: center;
+}
+
 .footer__big_shop_list-wrapper {
     width: 34px;
     height: 34px;
@@ -766,12 +800,13 @@
     flex-direction: column;
 }
 
-.footer__big_shop_list-desc-box p:nth-child(2) {
+.footer__big_shop_list-desc-box a:nth-child(2) {
     margin-top: 15px;
     color: #efc368;
 }
 
-.footer__big_shop_list p {
+.footer__big_shop_list p,
+.footer__big_shop_list a {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 14px;
@@ -799,12 +834,15 @@
 }
 
 .footer__big_menu ul li {
+    margin-top: 15px;
+}
+
+.footer__big_menu ul li a {
     font-family: "Montserrat";
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
-    margin-top: 15px;
 }
 
 .footer__big_menu ul li img {
@@ -1310,6 +1348,10 @@
     user-select: none;
 }
 
+.contact__form_inputs .button {
+    cursor: pointer;
+}
+
 .container {
     font-family: "Montserrat";
     font-weight: 400;
@@ -1381,7 +1423,8 @@
     justify-content: space-between;
 }
 
-.contact__form_data-list .list-elem {
+.contact__form_data-list .list-elem,
+.contact__form_data-list .list-elem a {
     height: 48px;
     display: flex;
     align-items: center;
