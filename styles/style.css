@@ -18,6 +18,7 @@
     min-height: 100vh;
     margin: 0 auto;
     position: relative;
+    /* border: solid 1px blue; */
 }
 
 .button {
@@ -49,7 +50,6 @@
 
 .hero {
     background: rgba(250, 250, 245, 0.5);
-    width: 1920px;
     height: 1000px;
     margin: 0 auto;
     display: flex;
@@ -58,10 +58,8 @@
 }
 
 .hero__header-wrapper {
-    /* height: 104px; */
+    width: 100%;
     background: #fcfcfa;
-    width: 1920px;
-
     height: 120px;
     display: flex;
     align-items: center;
@@ -104,10 +102,18 @@
     font-size: 17px;
     line-height: 22px;
     color: #214842;
+    transition: text-shadow 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hero__header_nav a:hover {
+    border-bottom: solid 2px #258f67;
+    padding-bottom: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hero__header_tel_buy-wrapper {
     display: flex;
+    margin-right: 20px;
 }
 
 .hero__header_tel_icon {
@@ -211,15 +217,15 @@ a .hero__header_buy_text {
 }
 
 .hero__product {
-    width: 1360px;
     height: 600px;
     margin-top: 97px;
     display: flex;
+    width: 1360px;
 }
 
 .hero__product_description {
     height: 600px;
-    width: 510px;
+    width: 42%;
     margin-left: 60px;
 }
 
@@ -250,7 +256,7 @@ a .hero__header_buy_text {
 .hero__product_image-wrapper {
     position: relative;
     height: 600px;
-    width: 710px;
+    width: 58%;
 }
 
 .hero__product_image-bg1 {
@@ -326,7 +332,7 @@ a .hero__header_buy_text {
 }
 
 .products {
-    width: 1360px;
+    max-width: 1360px;
     height: 1437px;
     margin: 100px auto 0 auto;
 }
@@ -359,7 +365,6 @@ a .hero__header_buy_text {
 }
 
 .products__card {
-    width: 23%;
     height: 678px;
     background: #ffffff;
     box-shadow: 0px 0px 15px rgba(37, 143, 103, 0.1);
@@ -497,7 +502,8 @@ a .hero__header_buy_text {
 
 .about-txt {
     height: 1000px;
-    background-image: url("../images/swing.png");
+    background: url("../images/swing.png") no-repeat center center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -538,7 +544,7 @@ a .hero__header_buy_text {
 }
 
 .advantages {
-    width: 1310px;
+    max-width: 1310px;
     height: 530px;
     margin: 100px auto 0 auto;
     display: flex;
@@ -618,6 +624,7 @@ a .hero__header_buy_text {
     line-height: 27px;
     color: #214842;
     margin-top: 30px;
+    text-align: center;
 }
 
 .advantages__card p {
@@ -632,26 +639,29 @@ a .hero__header_buy_text {
 
 .effects {
     height: 830px;
-    width: 1920px;
+    max-width: 1920px;
     margin-top: 86px;
-    display: flex;
     background: #fafaf5;
 }
 
-.effects__image {
-    height: 650px;
-    width: 620px;
-    margin: 90px 80px 90px 280px;
+.effects-wrapper {
+    display: flex;
+    max-width: 1360px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
-.effects__image img {
+.effects-wrapper img {
+    width: 45%;
+    object-fit: cover;
     border-radius: 16px;
+    margin: 90px 40px;
 }
 
 .effects__faq {
     height: 650px;
     width: 660px;
-    margin: 90px 280px 90px 0;
+    margin: 90px 40px;
     position: relative;
 }
 
@@ -679,7 +689,6 @@ a .hero__header_buy_text {
 }
 
 .effects__faq-accordion {
-    width: 660px;
     height: 60px;
     background: #ffffff;
     box-shadow: 0px 0px 15px rgba(37, 143, 103, 0.1);
@@ -690,7 +699,7 @@ a .hero__header_buy_text {
 
 .effects__faq .button {
     position: absolute;
-    bottom: 40px;
+    bottom: 25px;
 }
 
 .effects__faq-accordion .accordion {
@@ -744,12 +753,12 @@ a .hero__header_buy_text {
 }
 
 .footer {
-    width: 1920px;
+    width: 100%;
     height: 660px;
 }
 
 .footer__big {
-    width: 1920px;
+    width: 100%;
     height: 550px;
     background: #214842;
     display: flex;
@@ -762,6 +771,7 @@ a .hero__header_buy_text {
     height: 400px;
     display: flex;
     justify-content: space-between;
+    margin: 0 40px;
 }
 
 .footer__big_logo {
@@ -936,7 +946,7 @@ a .hero__header_buy_text {
 }
 
 .footer__copyright {
-    width: 1920px;
+    width: 100%;
     height: 110px;
     background: #fafaf5;
     display: flex;
@@ -1025,6 +1035,7 @@ a .hero__header_buy_text {
     width: 80px;
     border-bottom: 2px solid #258f67;
     padding-bottom: 20px;
+    margin-left: 20px;
     transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -1033,7 +1044,7 @@ a .hero__header_buy_text {
 }
 
 .breadcrumbs__bottom-line a:hover {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .breadcrumbs__bottom-line p {
@@ -1050,8 +1061,8 @@ a .hero__header_buy_text {
     font-weight: 700;
 }
 
-.content {
-    width: 1360px;
+.cooper__content {
+    width: 100%;
     height: 506px;
     display: flex;
     justify-content: space-between;
@@ -1059,19 +1070,30 @@ a .hero__header_buy_text {
     align-items: center;
 }
 
-.content-text {
-    width: 600px;
+.cooper__content-text {
+    width: 50%;
 }
 
-.content-image {
-    width: 660px;
+.cooper__content-text.left {
+    padding-right: 40px;
 }
 
-.content-image img {
+.cooper__content-text.right {
+    padding-left: 40px;
+}
+
+.cooper__content-image {
+    width: 50%;
+}
+
+.cooper__content-image img {
     border-radius: 16px;
+    /* max-width: 100%; */
+    width: 100%;
+    object-fit: cover;
 }
 
-.content-text h2 {
+.cooper__content-text h2 {
     font-family: "Nunito Sans";
     font-weight: 800;
     font-size: 36px;
@@ -1080,7 +1102,7 @@ a .hero__header_buy_text {
     margin-bottom: 30px;
 }
 
-.content-text p {
+.cooper__content-text p {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 17px;
@@ -1089,11 +1111,11 @@ a .hero__header_buy_text {
     margin: 20px 0;
 }
 
-.content-text ul {
+.cooper__content-text ul {
     padding-left: 5px;
 }
 
-.content-text li {
+.cooper__content-text li {
     font-family: "Montserrat";
     font-weight: 400;
     font-size: 17px;
@@ -1103,18 +1125,17 @@ a .hero__header_buy_text {
     list-style-type: none;
 }
 
-.content-text span {
+.cooper__content-text span {
     color: #258f67;
     font-weight: bold;
     font-size: 17px;
 }
 
-.content-text .button {
+.cooper__content-text .button {
     margin-top: 30px;
 }
 
 .contacts {
-    width: 1360px;
     height: 523px;
     display: flex;
     margin-bottom: 72px;
@@ -1148,11 +1169,19 @@ a .hero__header_buy_text {
 }
 
 .contacts__card {
-    width: 655px;
+    width: 50%;
     padding: 40px;
     background: #ffffff;
     box-shadow: 0px 0px 15px rgba(37, 143, 103, 0.1);
     border-radius: 16px;
+}
+
+.contacts__card.one {
+    margin-right: 2%;
+}
+
+.contacts__card.two {
+    margin-left: 2%;
 }
 
 .contacts__card h4 {
@@ -1170,7 +1199,6 @@ a .hero__header_buy_text {
     font-size: 14px;
     line-height: 22px;
     color: #556260;
-
     margin: 20px 0;
 }
 
@@ -1210,7 +1238,6 @@ a .hero__header_buy_text {
 /* Distribution */
 
 .shops_list {
-    width: 1360px;
     height: 428px;
     margin-bottom: 74px;
 }
@@ -1225,7 +1252,6 @@ a .hero__header_buy_text {
 }
 
 .shops_list-table {
-    width: 1360px;
     height: 335px;
     margin-top: 48px;
     margin-bottom: 74px;
@@ -1243,7 +1269,7 @@ a .hero__header_buy_text {
     height: 15px;
     width: 1100px;
     left: 130px;
-    top: 150;
+    top: 300px;
     background: #000000;
     filter: blur(50px);
     z-index: -1;
@@ -1321,6 +1347,8 @@ a .hero__header_buy_text {
 .shops_list-table p a:hover {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
+
+/* Kontakt */
 
 .contact__cards {
     width: 1250px;
@@ -1574,4 +1602,534 @@ a .hero__header_buy_text {
 .contact__form_data-social img:hover {
     scale: 1.4;
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.distr__content {
+    width: 100%;
+    height: 506px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.distr__content-text {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.distr__content-image {
+    width: 50%;
+}
+
+.distr__content-image img {
+    border-radius: 16px;
+    /* max-width: 100%; */
+    width: 100%;
+    object-fit: cover;
+}
+
+.distr__content-text h2 {
+    font-family: "Nunito Sans";
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #214842;
+    margin-bottom: 30px;
+}
+
+.distr__content-text p {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #556260;
+    margin: 20px 0;
+}
+
+.distr__content-text ul {
+    padding-left: 5px;
+}
+
+.distr__content-text li {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #556260;
+    margin: 3px 0;
+    list-style-type: none;
+}
+
+.distr__content-text span {
+    color: #258f67;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.distr__content-text .button {
+    margin-top: 30px;
+}
+
+@media (max-width: 1920px) {
+    .wrapper {
+        width: 1600px;
+        /* border: solid 1px red; */
+    }
+}
+
+@media (max-width: 1600px) {
+    .wrapper {
+        width: 1280px;
+        /* border: solid 1px green; */
+    }
+
+    .hero__header {
+        width: 100%;
+    }
+
+    .hero__product {
+        width: 100%;
+    }
+
+    .shops_list-table-blur {
+        left: 92px;
+    }
+
+    .footer__big-wrapper {
+        width: 100%;
+    }
+
+    .content-wrapper {
+        width: 1280px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .wrapper {
+        width: 1024px;
+        /* border: solid 1px blue; */
+    }
+
+    .hero__header {
+        width: 100%;
+    }
+
+    .footer__big-wrapper {
+        width: 100%;
+    }
+
+    .content-wrapper {
+        width: 1024px;
+    }
+
+    .hero {
+        height: 870px;
+    }
+
+    .hero__header_tel {
+        display: none;
+    }
+
+    .hero__product {
+        margin-top: 50px;
+        height: 570px;
+    }
+
+    .hero__product_description {
+        margin-left: 34px;
+        height: 570px;
+    }
+
+    .hero__product_description h1 {
+        font-size: 42px;
+        line-height: 50px;
+        margin-top: 62px;
+    }
+
+    .hero__product_description p {
+        padding-right: 25px;
+    }
+
+    .hero__product_image-wrapper {
+        height: 570px;
+    }
+
+    .hero__product_image-bg1 {
+        width: 289px;
+        height: 385px;
+        top: 30px;
+        left: 132px;
+    }
+
+    .hero__product_image-bg2 {
+        width: 532px;
+        height: 34px;
+        bottom: 133px;
+        left: 18px;
+        filter: blur(47px);
+    }
+
+    .hero__product_image img {
+        width: 100%;
+    }
+
+    .hero__advantages {
+        margin-top: 0px;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .products {
+        margin: 60px auto 0 auto;
+    }
+
+    .products__cards {
+        justify-content: space-around;
+    }
+
+    .products__card {
+        width: 23%;
+    }
+
+    .products__card img {
+        width: 100%;
+    }
+
+    .products__card p {
+        width: 100%;
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .banner__description {
+        padding: 93px 73px 108px 74px;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .about__section-image {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about__section-image img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .img-right {
+        margin-right: 0;
+    }
+
+    .about__section {
+        margin-top: 30px;
+    }
+
+    .about__section-text {
+        width: 50%;
+        margin: 0 20px;
+        font-size: 18px;
+    }
+
+    .img-left {
+        margin-left: 0;
+    }
+
+    .advantages {
+        height: 550px;
+    }
+
+    .advantages__cards {
+        height: 100%;
+    }
+
+    .advantages__card {
+        height: 100%;
+    }
+
+    .advantages__card p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .shops_list-table-blur {
+        width: 845px;
+    }
+
+    .footer__copyright-slogans {
+        width: auto;
+    }
+
+    .footer__copyright-slogan {
+        margin: 0 10px;
+    }
+
+    .footer__big_logo {
+        width: 200px;
+    }
+
+    .footer__big_shop {
+        width: 220px;
+    }
+
+    .contacts {
+        height: 550px;
+    }
+
+    .contacts__cards {
+        height: 434px;
+    }
+
+    .contacts__card img {
+        margin: 15px 91px;
+    }
+
+    .contact__card {
+        width: 45%;
+    }
+
+    .contact__cards {
+        width: 100%;
+        height: 240px;
+        justify-content: space-around;
+    }
+
+    .contact__form {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .contact__form_inputs {
+        width: 45%;
+    }
+
+    .contact__form_data {
+        width: 45%;
+    }
+
+    .contact__form_inputs input[type="text"] {
+        width: 100%;
+    }
+
+    .contact__form_inputs textarea {
+        width: 100%;
+    }
+
+    .contact__form_data-list .list-elem .icon {
+        flex-shrink: 0;
+    }
+
+    .cooper__content {
+        height: 554px;
+    }
+
+    .cooper__content-image {
+        height: 100%;
+    }
+
+    .cooper__content-image img[alt="female_1"] {
+        height: 100%;
+        object-position: 15% 50%;
+    }
+
+    .cooper__content-image img[alt="female_2"] {
+        height: 100%;
+        object-position: 42% 50%;
+    }
+
+    .distr__content-image {
+        height: 100%;
+    }
+
+    .distr__content-image img {
+        height: 100%;
+        object-position: 15% 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        width: 800px;
+        /* border: solid 1px red; */
+    }
+
+    .hero {
+        height: 785px;
+    }
+
+    .hero__header_nav {
+        width: 350px;
+    }
+
+    .hero__product_description h1 {
+        font-size: 31px;
+        line-height: 37px;
+        margin-top: 0px;
+    }
+
+    .hero__product_description p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hero__product {
+        height: 500px;
+    }
+
+    .hero__product_image-wrapper {
+        height: 515px;
+    }
+
+    .hero__product_image-bg1 {
+        width: 210px;
+        height: 325px;
+        top: 0;
+        left: 112px;
+    }
+
+    .hero__product_image-bg2 {
+        width: 416px;
+        height: 26px;
+        bottom: 156px;
+        left: 18px;
+        filter: blur(34px);
+    }
+
+    .hero__advantages_elem {
+        width: 20%;
+        scale: 0.9;
+    }
+
+    .hero__advantages_elem_image {
+        flex-shrink: 0;
+    }
+
+    .products {
+        height: 2150px;
+    }
+
+    .products h2 {
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .products__subtitle {
+        margin-bottom: 0px;
+    }
+
+    .products__cards {
+        flex-wrap: wrap;
+    }
+
+    .products__card {
+        width: 38%;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .products__card img {
+        width: none;
+    }
+
+    .banner__description {
+        padding: 46px 37px 108px 37px;
+    }
+
+    .banner {
+        margin-top: 70px;
+    }
+
+    .about__section-image img {
+        border-radius: 16px;
+    }
+
+    .about__section-image {
+        flex-shrink: 0;
+        height: 100%;
+    }
+
+    .about-txt {
+        height: 1050px;
+    }
+
+    .advantages {
+        height: 620px;
+    }
+
+    .effects {
+        height: 772px;
+    }
+
+    .effects-wrapper img {
+        margin: 60px 20px 60px 20px;
+    }
+
+    .effects__faq {
+        margin: 60px 20px 60px 0;
+    }
+
+    .footer__big {
+        height: 100%;
+        align-items: center;
+    }
+
+    .footer__big-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .footer__big_instagram {
+        width: 100%;
+    }
+
+    .footer__copyright-owner {
+        width: 332px;
+        height: auto;
+    }
+
+    .footer__copyright-owner img {
+        margin: 12px 0;
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    .shops_list-table table {
+        width: calc(100% - 40px);
+        margin: 0px 20px;
+    }
+
+    .shops_list-table p {
+        line-height: 29px;
+        padding: 0 100px;
+    }
+
+    .shops_list-table-blur {
+        width: 617px;
+    }
+
+    .contacts__card img {
+        margin: 15px 56px;
+    }
+
+    .cooper__content {
+        height: 758px;
+    }
+
+    .distr__content {
+        height: 602px;
+    }
+
+    .contact__cards {
+        height: 300px;
+    }
+
+    .contact__form {
+        height: 582px;
+    }
 }
