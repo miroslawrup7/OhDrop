@@ -2140,7 +2140,7 @@ a .hero__header_buy_text {
     @media (max-width: 800px) {
         .wrapper {
             width: 360px;
-            border: solid 1px red;
+            /* border: solid 1px red; */
         }
 
         .hero {
