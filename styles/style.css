@@ -1348,6 +1348,10 @@ a .hero__header_buy_text {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
+.shops_list-table-mobile {
+    display: none;
+}
+
 /* Kontakt */
 
 .contact__cards {
@@ -2136,7 +2140,7 @@ a .hero__header_buy_text {
     @media (max-width: 800px) {
         .wrapper {
             width: 360px;
-            /* border: solid 1px red; */
+            border: solid 1px red;
         }
 
         .hero {
@@ -2442,6 +2446,204 @@ a .hero__header_buy_text {
             height: fit-content;
             width: fit-content;
             margin: 10px auto;
+        }
+
+        .header {
+            padding: 0 10px;
+            height: 100%;
+            padding: 40px 10px;
+        }
+
+        .header h1 {
+            font-size: 43px;
+            padding: 0 5px 20px 5px;
+        }
+
+        .header p {
+            width: 100%;
+        }
+
+        .breadcrumbs {
+            height: 75px;
+        }
+
+        .breadcrumbs__bottom-line {
+            padding-bottom: 7px;
+        }
+
+        .breadcrumbs__bottom-line p {
+            font-size: 16px;
+        }
+
+        .breadcrumbs__bottom-line {
+            padding-bottom: 7px;
+        }
+
+        .distr__content {
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .distr__content-image {
+            order: 0;
+            width: 100%;
+        }
+
+        .distr__content-text {
+            order: 1;
+            width: 100%;
+        }
+
+        .distr__content-text h2 {
+            font-size: 30px;
+            margin: 20px 10px;
+            text-align: center;
+        }
+
+        .distr__content-text p {
+            padding: 0 5px;
+        }
+
+        .shops_list-table {
+            display: none;
+        }
+
+        .shops_list-table-mobile {
+            display: block;
+        }
+
+        .shops_list {
+            height: 100%;
+            margin-bottom: 39px;
+        }
+
+        .shops_list-table-mobile {
+            height: 100%;
+            margin-top: 48px;
+            background: #fafaf5;
+            border-radius: 16px;
+            font-family: "Nunito Sans";
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 44px;
+            position: relative;
+        }
+
+        .shops_list-table-mobile table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .shops_list-table-mobile td {
+            color: #556260;
+            width: 30%;
+            border-bottom: 1px solid transparent;
+            height: 120px;
+            vertical-align: middle;
+        }
+
+        .shops_list-table-mobile .button {
+            border: 1px solid #258f67;
+            background: white;
+            color: #258f67;
+            display: inline-block;
+            transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .shops_list-table-mobile .button:hover {
+            border: 1px solid #258f67;
+            background: #258f67;
+            color: white;
+        }
+
+        .shops_list-table-mobile p {
+            text-align: center;
+            font-family: "Nunito Sans";
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 30px;
+            color: #556260;
+            padding-top: 36px;
+            background-color: white;
+            z-index: -2;
+        }
+
+        .shops_list-table-mobile p a {
+            color: #258f67;
+            transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .shops_list-table-mobile p a:hover {
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .shops_list-table-mobile td.table_head {
+            height: 37px;
+            background-color: #e1e1d3;
+        }
+
+        .shops_list-table-blur {
+            display: none;
+        }
+
+        .cooper__content {
+            height: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .cooper__content-text {
+            width: 100%;
+            order: 1;
+        }
+
+        .cooper__content-text.left {
+            padding: 5px;
+        }
+
+        .cooper__content-text.right {
+            padding: 5px;
+        }
+
+        .cooper__content-image {
+            width: 100%;
+            order: 0;
+        }
+
+        .cooper__content-text h2 {
+            text-align: center;
+            font-size: 31px;
+        }
+
+        .contacts {
+            height: 100%;
+            margin-bottom: 33px;
+        }
+
+        .contacts__cards {
+            height: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-top: 0px;
+        }
+
+        .contacts__card {
+            width: 100%;
+            margin: 30px 0;
+        }
+
+        .contacts__card .button {
+            font-size: 15px;
+        }
+
+        .contacts__card.one,
+        .contacts__card.two {
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 }
