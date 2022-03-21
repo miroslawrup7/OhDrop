@@ -305,7 +305,7 @@ a .hero__header_buy_text {
 
 .hero__advantages_elem_image {
     width: 60px;
-    height: 100%;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -2131,5 +2131,317 @@ a .hero__header_buy_text {
 
     .contact__form {
         height: 582px;
+    }
+
+    @media (max-width: 800px) {
+        .wrapper {
+            width: 360px;
+            /* border: solid 1px red; */
+        }
+
+        .hero {
+            height: 1021px;
+        }
+
+        .hero__header_nav {
+            display: none;
+        }
+
+        .hero__header_tel_buy-wrapper {
+            display: none;
+        }
+
+        .hero__product {
+            flex-direction: column;
+            margin: 0;
+            padding: 0 10px;
+            height: 709px;
+        }
+
+        .hero__product_description {
+            width: 100%;
+            margin: 0;
+            order: 1;
+        }
+
+        .hero__product_description h1 {
+            font-size: 26px;
+            line-height: 31px;
+            text-align: center;
+        }
+
+        .hero__product_description p {
+            padding-right: 0;
+            text-align: center;
+        }
+
+        .hero__product_image-wrapper {
+            order: 0;
+            width: 100%;
+            height: 469px;
+        }
+
+        .hero__product_image-bg1 {
+            filter: blur(47px);
+            width: 210px;
+            height: 247px;
+            top: 0;
+            left: 62px;
+        }
+
+        .hero__product_image-bg2 {
+            width: 292px;
+            height: 26px;
+            bottom: 70px;
+            left: 21px;
+            filter: blur(25px);
+        }
+
+        .hero__advantages {
+            flex-wrap: wrap;
+            height: 161px;
+        }
+
+        .hero__advantages_elem {
+            width: 50%;
+            scale: 0.8;
+            height: 81px;
+        }
+
+        .products {
+            margin: 28px auto 0 auto;
+            height: 100%;
+        }
+
+        .products h2 {
+            width: 100%;
+            margin-top: 50px;
+            font-size: 31px;
+        }
+
+        .products__card {
+            width: 100%;
+            height: 100%;
+        }
+
+        .products__card h4 {
+            font-size: 26px;
+            line-height: 35px;
+        }
+
+        .banner {
+            height: 100%;
+            flex-wrap: wrap;
+        }
+
+        .banner__description {
+            height: 100%;
+            width: 100%;
+            padding: 46px 37px 26px 37px;
+        }
+
+        .banner__description h3 {
+            text-align: center;
+        }
+
+        .banner__description p {
+            text-align: center;
+        }
+
+        .banner__image {
+            height: 100%;
+            width: 100%;
+        }
+
+        .banner__image {
+            height: 230px;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            border-top-right-radius: 0;
+        }
+
+        .about__section {
+            height: 100%;
+            flex-direction: column;
+        }
+
+        .about h2 {
+            font-size: 28px;
+            line-height: 39px;
+            width: 100%;
+        }
+
+        .about__section-image {
+            width: 100%;
+        }
+
+        .about__section-text {
+            width: 100%;
+        }
+
+        .img-left {
+            order: -1;
+        }
+
+        .about-txt {
+            height: 100%;
+            margin-top: 42px;
+        }
+
+        .about-txt h2 {
+            font-size: 33px;
+            line-height: 41px;
+        }
+
+        .about-txt p {
+            font-size: 17px;
+            line-height: 30px;
+        }
+
+        .about-txt .button {
+            margin-top: 24px;
+        }
+
+        .button {
+            font-size: 16px;
+        }
+
+        .advantages {
+            height: 100%;
+            margin: 70px auto 0 auto;
+        }
+
+        .advantages__cards {
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .advantages__card {
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .advantages__card h4 {
+            font-size: 27px;
+        }
+
+        .advantages__card p {
+            font-size: 18px;
+        }
+
+        .effects {
+            height: 100%;
+        }
+
+        .effects-wrapper {
+            flex-wrap: wrap;
+            height: 100%;
+        }
+
+        .effects__faq {
+            height: 100%;
+            margin: 60px 0;
+            height: 834px;
+        }
+
+        .effects-wrapper img {
+            width: 100%;
+            margin: 0;
+        }
+
+        .effects__faq h2 {
+            font-size: 31px;
+            line-height: 41px;
+            text-align: center;
+        }
+
+        .effects__faq .effects__faq-subtitle {
+            text-align: center;
+        }
+
+        .effects__faq-accordions {
+            align-items: center;
+        }
+
+        .effects__faq-accordion {
+            height: 91px;
+            align-items: center;
+            width: 95%;
+            position: relative;
+        }
+
+        .effects__faq-accordion .accordion {
+            font-size: 22px;
+        }
+
+        .effects__faq-accordion p {
+            font-size: 15px;
+        }
+
+        .effects__faq-accordion .accordion::after {
+            position: absolute;
+            right: 21px;
+            top: 32px;
+        }
+
+        .effects__faq-accordion.active {
+            height: 250px;
+        }
+
+        .effects__faq .button {
+            left: 57px;
+        }
+
+        .footer {
+            height: 100%;
+        }
+
+        .footer__big {
+            height: 100%;
+        }
+
+        .footer__big-wrapper {
+            margin: 20px;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .footer__big_logo,
+        .footer__big_shop,
+        .footer__big_menu,
+        .footer__big_instagram {
+            margin: 20px;
+            height: initial;
+            width: 90%;
+        }
+
+        .footer__big_instagram-image-grid img {
+            scale: 0.9;
+        }
+
+        .footer__big_instagram-image-grid img:hover {
+            scale: 1;
+        }
+
+        .footer__copyright {
+            height: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .footer__copyright-owner {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+            flex-direction: column;
+        }
+
+        .footer__copyright-owner img {
+            margin: 19px 0;
+            height: fit-content;
+            width: fit-content;
+            margin: 10px auto;
+        }
     }
 }
