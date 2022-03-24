@@ -2666,6 +2666,10 @@ a .hero__header_buy_text {
             margin-bottom: 40px;
         }
 
+        .contacts__card img {
+            margin: 15px 25px;
+        }
+
         .contact__form {
             height: 100%;
             flex-direction: column;
